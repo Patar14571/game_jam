@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpo07eyxga4a4"]
+
+[ext_resource type="Texture2D" uid="uid://bwqikwf3q1kso" path="res://assets/dude.png" id="1_1ouwb"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_lfjoe"]
+[ext_resource type="PackedScene" uid="uid://de8bhjmv2hmgq" path="res://physics/WaterDetection2D.tscn" id="3_obhxh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e05h6"]
+size = Vector2(15.875, 15.75)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_lfjoe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, -8)
+scale = Vector2(0.25, 0.222222)
+texture = ExtResource("1_1ouwb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -8)
+shape = SubResource("RectangleShape2D_e05h6")
+
+[node name="WaterDetection2D" parent="." instance=ExtResource("3_obhxh")]
+
+[connection signal="area_entered" from="WaterDetection2D" to="WaterDetection2D" method="_on_area_entered"]
+[connection signal="body_entered" from="WaterDetection2D" to="WaterDetection2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="WaterDetection2D" to="." method="_on_water_detection_2d_body_exited"]
+[connection signal="body_exited" from="WaterDetection2D" to="WaterDetection2D" method="_on_area_2d_body_exited"]
+[connection signal="water_state_changed" from="WaterDetection2D" to="." method="_on_water_detection_2d_water_state_changed"]

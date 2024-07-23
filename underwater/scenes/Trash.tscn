@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://ym0ok2nspnhy"]
+
+[ext_resource type="Script" path="res://scenes/Trash.gd" id="1_2gdb4"]
+[ext_resource type="Texture2D" uid="uid://d334iopj7kjdm" path="res://assets/trash.png" id="1_46uo2"]
+[ext_resource type="PackedScene" uid="uid://dpo6k1cwhxh0k" path="res://scenes/wander.tscn" id="3_8eahk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhlva"]
+size = Vector2(16, 18)
+
+[node name="Trash" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
+script = ExtResource("1_2gdb4")
+wander_direction = NodePath("Wander")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mhlva")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.265625, 0.25)
+texture = ExtResource("1_46uo2")
+
+[node name="Wander" parent="." instance=ExtResource("3_8eahk")]
+group_name = "FirstEnemy"
