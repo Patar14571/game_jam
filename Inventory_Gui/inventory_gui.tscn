@@ -1,0 +1,285 @@
+[gd_scene load_steps=22 format=3 uid="uid://duwfp5tlomvhp"]
+
+[ext_resource type="Texture2D" uid="uid://cbvkjqr83cvyp" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Book Desk/7.png" id="1_adf8a"]
+[ext_resource type="Script" path="res://Inventory_Gui/inventory_gui.gd" id="1_iq8yq"]
+[ext_resource type="PackedScene" uid="uid://bcx5j8jwtcnch" path="res://Inventory_Gui/item_slot.tscn" id="3_bp16m"]
+[ext_resource type="Script" path="res://Inventory_Gui/grid_controller.gd" id="3_pirtj"]
+[ext_resource type="Script" path="res://Inventory_Gui/button_script.gd" id="4_cdt5r"]
+[ext_resource type="Texture2D" uid="uid://c7k6rdyad3jh6" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/7.png" id="4_qp1o7"]
+[ext_resource type="Texture2D" uid="uid://phrjl77wrc0i" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Folding & Cutout/3 Item Holder/1.png" id="4_xgfwt"]
+[ext_resource type="PackedScene" uid="uid://v5mtl4c5hkmb" path="res://Inventory_Gui/item_slot_alch.tscn" id="5_2heoq"]
+[ext_resource type="PackedScene" uid="uid://dfgfivvehhwes" path="res://Inventory_Gui/item_slot_alch2.tscn" id="5_qoba8"]
+[ext_resource type="Texture2D" uid="uid://cecpbmjtsovp5" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/6.png" id="5_wuxde"]
+[ext_resource type="Texture2D" uid="uid://cin04yuyi4yoy" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/1.png" id="6_atqoo"]
+[ext_resource type="PackedScene" uid="uid://cty0s1xx7tjl1" path="res://Inventory_Gui/item_slot_alch4.tscn" id="6_n61uw"]
+[ext_resource type="Texture2D" uid="uid://byer6ar1a06l4" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/2.png" id="7_fb783"]
+[ext_resource type="Texture2D" uid="uid://dl4gd27gs17cp" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/4.png" id="8_jwaoo"]
+[ext_resource type="PackedScene" uid="uid://dp4ccwjwcdvn6" path="res://Inventory_Gui/item_slot_alch1.tscn" id="8_yyoir"]
+[ext_resource type="Texture2D" uid="uid://b7dpfr4r54aas" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/5.png" id="9_woxvw"]
+[ext_resource type="Texture2D" uid="uid://cly773fohghve" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/8.png" id="10_861hu"]
+[ext_resource type="Texture2D" uid="uid://bks5tf3y44sh2" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/9.png" id="11_xqam5"]
+[ext_resource type="Texture2D" uid="uid://gvcgys2aumev" path="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/12.png" id="12_kb3ee"]
+[ext_resource type="Script" path="res://Inventory_Gui/menubarbuttonscript.gd" id="17_t7qug"]
+[ext_resource type="Texture2D" uid="uid://d1bpk8tqtxuan" path="res://Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Plain/5 Mini Map/1.png" id="21_72jvy"]
+
+[node name="InventoryGui" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -13.0
+offset_top = -4.0
+offset_right = 390.0
+offset_bottom = 378.0
+size_flags_horizontal = 4
+script = ExtResource("1_iq8yq")
+
+[node name="GridController" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 69.0
+offset_top = 298.0
+offset_right = 109.0
+offset_bottom = 338.0
+script = ExtResource("3_pirtj")
+
+[node name="7" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(206, 195)
+scale = Vector2(0.505208, 0.689286)
+texture = ExtResource("1_adf8a")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 53.0
+offset_right = 276.0
+offset_bottom = 268.0
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = -8.0
+offset_right = 249.0
+offset_bottom = 209.0
+columns = 5
+
+[node name="ItemSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot"]
+z_index = 2
+position = Vector2(62, 18)
+texture = ExtResource("4_qp1o7")
+
+[node name="ItemSlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display2" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot4"]
+z_index = 2
+position = Vector2(22.7957, 105.887)
+texture = ExtResource("5_wuxde")
+
+[node name="ItemSlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display3" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot5"]
+z_index = 2
+position = Vector2(21, 60)
+texture = ExtResource("6_atqoo")
+
+[node name="ItemSlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display6" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot6"]
+z_index = 2
+position = Vector2(-111, 106)
+texture = ExtResource("7_fb783")
+
+[node name="ItemSlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display7" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot7"]
+z_index = 2
+position = Vector2(-24, 60)
+texture = ExtResource("8_jwaoo")
+
+[node name="ItemSlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display8" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot8"]
+z_index = 2
+position = Vector2(23, 18)
+texture = ExtResource("9_woxvw")
+
+[node name="ItemSlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display9" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot9"]
+z_index = 2
+position = Vector2(153, -29)
+texture = ExtResource("5_wuxde")
+
+[node name="ItemSlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display10" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot10"]
+z_index = 2
+position = Vector2(67, -26)
+texture = ExtResource("4_qp1o7")
+
+[node name="ItemSlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display11" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot11"]
+z_index = 2
+position = Vector2(-22, -27)
+texture = ExtResource("10_861hu")
+
+[node name="ItemSlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display12" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot12"]
+z_index = 2
+position = Vector2(-155, -26)
+texture = ExtResource("11_xqam5")
+
+[node name="ItemSlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="item-display4" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot13"]
+z_index = 2
+position = Vector2(66, -26)
+texture = ExtResource("12_kb3ee")
+
+[node name="ItemSlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot25" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="ItemSlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+z_index = 1
+layout_mode = 2
+script = ExtResource("4_cdt5r")
+
+[node name="1" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(134, 96)
+scale = Vector2(1.53571, 1.52232)
+texture = ExtResource("21_72jvy")
+
+[node name="MenuBar" type="MenuBar" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 302.0
+offset_right = 311.0
+offset_bottom = 336.0
+
+[node name="1" type="Sprite2D" parent="MenuBar"]
+position = Vector2(113, 17)
+scale = Vector2(0.455874, 0.638117)
+texture = ExtResource("4_xgfwt")
+
+[node name="GridContainer" type="GridContainer" parent="MenuBar"]
+layout_mode = 0
+offset_right = 217.0
+offset_bottom = 40.0
+columns = 6
+
+[node name="ItemSlot2" parent="MenuBar/GridContainer" instance=ExtResource("5_qoba8")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot3" parent="MenuBar/GridContainer" instance=ExtResource("6_n61uw")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot4" parent="MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot" parent="MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot5" parent="MenuBar/GridContainer" instance=ExtResource("8_yyoir")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
