@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfjmfhgndxtkd"
-path="res://.godot/imported/sky_blue.png-fc459df0ef775b6145c54c42e792a7a2.ctex"
+path="res://.godot/imported/sky_blue.png-827e561df8fe3ca6822f5f896d8d9e87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/sky_blue.png"
-dest_files=["res://.godot/imported/sky_blue.png-fc459df0ef775b6145c54c42e792a7a2.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/sky_blue.png"
+dest_files=["res://.godot/imported/sky_blue.png-827e561df8fe3ca6822f5f896d8d9e87.ctex"]
 
 [params]
 

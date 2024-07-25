@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://724qa2opvqoa"]
+[gd_scene load_steps=10 format=3 uid="uid://724qa2opvqoa"]
 
 [ext_resource type="Texture2D" uid="uid://cfmju8onuacry" path="res://assets/Water+.png" id="1_g70gh"]
 [ext_resource type="Texture2D" uid="uid://dcj6nmsr0k47r" path="res://assets/Terrain (16x16).png" id="2_xfbf6"]
 [ext_resource type="PackedScene" uid="uid://bpo07eyxga4a4" path="res://scenes/player.tscn" id="3_au7qb"]
+[ext_resource type="PackedScene" uid="uid://duwfp5tlomvhp" path="res://Inventory_Gui/inventory_gui.tscn" id="4_21snj"]
 [ext_resource type="PackedScene" uid="uid://ym0ok2nspnhy" path="res://scenes/Trash.tscn" id="4_aqclq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f1q0s"]
@@ -1546,6 +1547,9 @@ collision_layer = 3
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
+
+[node name="InventoryGui" parent="Player" instance=ExtResource("4_21snj")]
+z_index = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(319, -2)

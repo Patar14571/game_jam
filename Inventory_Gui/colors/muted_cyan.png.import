@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcx5whvnvuae7"
-path="res://.godot/imported/muted_cyan.png-fab017d7363e7a50aabe495085e07bac.ctex"
+path="res://.godot/imported/muted_cyan.png-838bb534f9357722a24ae0fb0afd5d67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/muted_cyan.png"
-dest_files=["res://.godot/imported/muted_cyan.png-fab017d7363e7a50aabe495085e07bac.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/muted_cyan.png"
+dest_files=["res://.godot/imported/muted_cyan.png-838bb534f9357722a24ae0fb0afd5d67.ctex"]
 
 [params]
 

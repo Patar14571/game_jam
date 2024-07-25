@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xo0ac7tw4vcm"
-path="res://.godot/imported/muted_blue.png-107023b2cf765671ad1716325a076566.ctex"
+path="res://.godot/imported/muted_blue.png-dc084753c8918e7d69a42e0a2b0c46b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/muted_blue.png"
-dest_files=["res://.godot/imported/muted_blue.png-107023b2cf765671ad1716325a076566.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/muted_blue.png"
+dest_files=["res://.godot/imported/muted_blue.png-dc084753c8918e7d69a42e0a2b0c46b6.ctex"]
 
 [params]
 

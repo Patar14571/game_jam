@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4n3dh4iusk8n"
-path="res://.godot/imported/2.png-6d18c7ff4e71f7814755ab88ed7ce1d3.ctex"
+path="res://.godot/imported/2.png-597d8d601ef889285f0bc249a3004bf0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/Free Paper UI System/1 Sprites/Day & Night Cycle/Items Holder/2/5 Lightning 1/2.png"
-dest_files=["res://.godot/imported/2.png-6d18c7ff4e71f7814755ab88ed7ce1d3.ctex"]
+source_file="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Day & Night Cycle/Items Holder/2/5 Lightning 1/2.png"
+dest_files=["res://.godot/imported/2.png-597d8d601ef889285f0bc249a3004bf0.ctex"]
 
 [params]
 

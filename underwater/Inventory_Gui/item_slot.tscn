@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcx5j8jwtcnch"]
+
+[ext_resource type="Texture2D" uid="uid://dms0c2shi0xeo" path="res://Inventory_Gui/Free Paper UI System/1 Sprites/Content/4 Buttons/10.png" id="1_gs40j"]
+
+[node name="ItemSlot" type="Panel"]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="10" type="Sprite2D" parent="."]
+modulate = Color(0.496728, 0.324483, 0.216531, 1)
+position = Vector2(1, 2)
+scale = Vector2(2.40625, 2.1875)
+texture = ExtResource("1_gs40j")
+centered = false

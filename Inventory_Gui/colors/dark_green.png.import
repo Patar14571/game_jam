@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xxbpo4ghhaxq"
-path="res://.godot/imported/dark_green.png-75dfb55c9ee502c5b5512fdf0b6f9ced.ctex"
+path="res://.godot/imported/dark_green.png-319e54c3a002d5a846fd60dbd7928edc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/dark_green.png"
-dest_files=["res://.godot/imported/dark_green.png-75dfb55c9ee502c5b5512fdf0b6f9ced.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/dark_green.png"
+dest_files=["res://.godot/imported/dark_green.png-319e54c3a002d5a846fd60dbd7928edc.ctex"]
 
 [params]
 

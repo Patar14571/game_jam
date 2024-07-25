@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dglu87pyvmqxn"
-path="res://.godot/imported/24.png-639a6ea8f324e8a1c635b070b9922870.ctex"
+path="res://.godot/imported/24.png-7401c7fa04257ff7614ebc1a24890eb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Paper Content Appear Animation/Folding & Cutout/7 Dialogue Box/24.png"
-dest_files=["res://.godot/imported/24.png-639a6ea8f324e8a1c635b070b9922870.ctex"]
+source_file="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Paper Content Appear Animation/Folding & Cutout/7 Dialogue Box/24.png"
+dest_files=["res://.godot/imported/24.png-7401c7fa04257ff7614ebc1a24890eb0.ctex"]
 
 [params]
 

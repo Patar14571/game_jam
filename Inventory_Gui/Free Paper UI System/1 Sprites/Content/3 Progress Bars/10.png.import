@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br53wsj1u4ea8"
-path="res://.godot/imported/10.png-c3b176f757a1699ecb69211e201fc3be.ctex"
+path="res://.godot/imported/10.png-74b280064e2af3cae92f3198da0b9334.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/Free Paper UI System/1 Sprites/Content/3 Progress Bars/10.png"
-dest_files=["res://.godot/imported/10.png-c3b176f757a1699ecb69211e201fc3be.ctex"]
+source_file="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Content/3 Progress Bars/10.png"
+dest_files=["res://.godot/imported/10.png-74b280064e2af3cae92f3198da0b9334.ctex"]
 
 [params]
 

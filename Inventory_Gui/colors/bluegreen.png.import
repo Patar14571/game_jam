@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bym256uws8oln"
-path="res://.godot/imported/bluegreen.png-bcf41771157f07b6358aa371703c29ba.ctex"
+path="res://.godot/imported/bluegreen.png-edb3c881bb878239e4adb591e423e6b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/bluegreen.png"
-dest_files=["res://.godot/imported/bluegreen.png-bcf41771157f07b6358aa371703c29ba.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/bluegreen.png"
+dest_files=["res://.godot/imported/bluegreen.png-edb3c881bb878239e4adb591e423e6b2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p4dfso2m8h5j"
-path="res://.godot/imported/orange.png-123ff75dafdcf53438298aa72d336b45.ctex"
+path="res://.godot/imported/orange.png-ede45462eb9e182bb108845ed74fe063.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/orange.png"
-dest_files=["res://.godot/imported/orange.png-123ff75dafdcf53438298aa72d336b45.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/orange.png"
+dest_files=["res://.godot/imported/orange.png-ede45462eb9e182bb108845ed74fe063.ctex"]
 
 [params]
 

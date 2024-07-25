@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq5alyhpjte61"
-path="res://.godot/imported/bright_cyan.png-01e0193668f43ae7b57ab7821212bcb6.ctex"
+path="res://.godot/imported/bright_cyan.png-c395d891a1d2706ae0d2644da6e377de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/bright_cyan.png"
-dest_files=["res://.godot/imported/bright_cyan.png-01e0193668f43ae7b57ab7821212bcb6.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/bright_cyan.png"
+dest_files=["res://.godot/imported/bright_cyan.png-c395d891a1d2706ae0d2644da6e377de.ctex"]
 
 [params]
 

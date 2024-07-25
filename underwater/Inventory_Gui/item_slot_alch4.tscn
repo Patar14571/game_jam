@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cty0s1xx7tjl1"]
+
+[ext_resource type="Texture2D" uid="uid://d4h0jst1xa4cj" path="res://Inventory_Gui/colors/red.png" id="1_2lag0"]
+
+[node name="ItemSlot" type="Panel"]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="10" type="Sprite2D" parent="."]
+modulate = Color(0.496728, 0.324483, 0.216531, 1)
+position = Vector2(1, 2)
+scale = Vector2(1.11765, 1.08824)
+texture = ExtResource("1_2lag0")
+centered = false

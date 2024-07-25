@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xey4vdjnkv43"
-path="res://.godot/imported/muted_purple.png-6747f75a1daa05614c822a2fb8b1e94c.ctex"
+path="res://.godot/imported/muted_purple.png-02d6ac1c2d506962700a30595aa2aaff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/muted_purple.png"
-dest_files=["res://.godot/imported/muted_purple.png-6747f75a1daa05614c822a2fb8b1e94c.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/muted_purple.png"
+dest_files=["res://.godot/imported/muted_purple.png-02d6ac1c2d506962700a30595aa2aaff.ctex"]
 
 [params]
 

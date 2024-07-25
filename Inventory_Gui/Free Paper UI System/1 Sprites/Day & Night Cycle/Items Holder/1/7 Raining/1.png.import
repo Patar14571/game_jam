@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqj3qabhpycl2"
-path="res://.godot/imported/1.png-f9a6f2dcafec0bccc0b8c866c752f95d.ctex"
+path="res://.godot/imported/1.png-2c69c2c093857a37f78d035bc6fb061f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/Free Paper UI System/1 Sprites/Day & Night Cycle/Items Holder/1/7 Raining/1.png"
-dest_files=["res://.godot/imported/1.png-f9a6f2dcafec0bccc0b8c866c752f95d.ctex"]
+source_file="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Day & Night Cycle/Items Holder/1/7 Raining/1.png"
+dest_files=["res://.godot/imported/1.png-2c69c2c093857a37f78d035bc6fb061f.ctex"]
 
 [params]
 

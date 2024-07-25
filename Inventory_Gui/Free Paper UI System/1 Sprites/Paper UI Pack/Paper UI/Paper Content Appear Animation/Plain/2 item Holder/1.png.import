@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://142opfg5mkr"
-path="res://.godot/imported/1.png-384adc4984cc75f247682f64aa8a16b3.ctex"
+path="res://.godot/imported/1.png-39360cf79cca05f39dcb10dd9b9072fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Paper Content Appear Animation/Plain/2 item Holder/1.png"
-dest_files=["res://.godot/imported/1.png-384adc4984cc75f247682f64aa8a16b3.ctex"]
+source_file="res://game_jam/Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Paper Content Appear Animation/Plain/2 item Holder/1.png"
+dest_files=["res://.godot/imported/1.png-39360cf79cca05f39dcb10dd9b9072fd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4egyr4rjgu37"
-path="res://.godot/imported/dark_magenta.png-10cb11d12f71d089f4ffbd664d80bd4f.ctex"
+path="res://.godot/imported/dark_magenta.png-d4ab34066943f0cf2b3236ab47f15790.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inventory_Gui/colors/dark_magenta.png"
-dest_files=["res://.godot/imported/dark_magenta.png-10cb11d12f71d089f4ffbd664d80bd4f.ctex"]
+source_file="res://game_jam/Inventory_Gui/colors/dark_magenta.png"
+dest_files=["res://.godot/imported/dark_magenta.png-d4ab34066943f0cf2b3236ab47f15790.ctex"]
 
 [params]
 
