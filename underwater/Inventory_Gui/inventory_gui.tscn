@@ -1,9 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://duwfp5tlomvhp"]
+[gd_scene load_steps=21 format=3 uid="uid://duwfp5tlomvhp"]
 
 [ext_resource type="Texture2D" uid="uid://cbvkjqr83cvyp" path="res://Inventory_Gui/Free Paper UI System/1 Sprites/Book Desk/7.png" id="1_adf8a"]
 [ext_resource type="Script" path="res://Inventory_Gui/inventory_gui.gd" id="1_iq8yq"]
 [ext_resource type="PackedScene" uid="uid://bcx5j8jwtcnch" path="res://Inventory_Gui/item_slot.tscn" id="3_bp16m"]
-[ext_resource type="Script" path="res://Inventory_Gui/grid_controller.gd" id="3_pirtj"]
 [ext_resource type="Script" path="res://Inventory_Gui/button_script.gd" id="4_cdt5r"]
 [ext_resource type="Texture2D" uid="uid://c7k6rdyad3jh6" path="res://Inventory_Gui/Free Paper UI System/1 Sprites/Content/1 Items/7.png" id="4_qp1o7"]
 [ext_resource type="Texture2D" uid="uid://phrjl77wrc0i" path="res://Inventory_Gui/Free Paper UI System/1 Sprites/Paper UI Pack/Paper UI/Folding & Cutout/3 Item Holder/1.png" id="4_xgfwt"]
@@ -281,12 +280,3 @@ z_index = -1
 position = Vector2(194, 190)
 scale = Vector2(0.505208, 0.689286)
 texture = ExtResource("1_adf8a")
-
-[node name="GridController" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 57.0
-offset_top = 293.0
-offset_right = 97.0
-offset_bottom = 333.0
-script = ExtResource("3_pirtj")

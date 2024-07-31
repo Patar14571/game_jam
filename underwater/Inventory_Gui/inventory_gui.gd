@@ -4,26 +4,26 @@ var is_open = false
 
 func _ready():
 	# Create a CanvasLayer and add it as the last child of the Control node
-	var canvas_layer = CanvasLayer.new()
-	add_child(canvas_layer)
-	move_child(canvas_layer, get_child_count() - 1)
-
+	#var canvas_layer = CanvasLayer.new()
+	#add_child(canvas_layer)
+	#move_child(canvas_layer, get_child_count() - 1)
+	close()
 	var grid_container = $CanvasLayer/NinePatchRect/GridContainer
 	if grid_container == null:
 		print("GridContainer node not found")
 		return
 
-	var menu_bar = $MenuBar
+	var menu_bar = $CanvasLayer/MenuBar/GridContainer
 	if menu_bar == null:
 		print("MenuBar node not found")
 		return
 
 	# Move GridContainer and MenuBar into the CanvasLayer
-	grid_container.get_parent().remove_child(grid_container)
-	canvas_layer.add_child(grid_container)
-	
-	menu_bar.get_parent().remove_child(menu_bar)
-	canvas_layer.add_child(menu_bar)
+	#grid_container.get_parent().remove_child(grid_container)
+	#canvas_layer.add_child(grid_container)
+	#
+	#menu_bar.get_parent().remove_child(menu_bar)
+	#canvas_layer.add_child(menu_bar)
 	
 	# Connect signals for grid_container children
 	for child in grid_container.get_children():
@@ -38,8 +38,8 @@ func _ready():
 					button.connect("button_clicked", Callable(self, "_on_button_clicked"))
 
 	# Ensure the CanvasLayer is hidden initially
-	canvas_layer.visible = false
-	print("Initial CanvasLayer visibility:", canvas_layer.visible)  # Debugging
+	#canvas_layer.visible = false
+	#print("Initial CanvasLayer visibility:", canvas_layer.visible)  # Debugging
 
 func _process(delta):
 	if Input.is_action_just_pressed("i"):

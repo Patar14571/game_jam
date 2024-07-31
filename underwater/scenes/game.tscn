@@ -1551,7 +1551,6 @@ collision_layer = 3
 remote_path = NodePath("../../Camera2D")
 
 [node name="InventoryGui" parent="Player" instance=ExtResource("4_21snj")]
-visible = false
 z_index = 2
 
 [node name="Torch" type="PointLight2D" parent="Player"]
