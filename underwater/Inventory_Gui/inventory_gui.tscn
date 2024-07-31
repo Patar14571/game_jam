@@ -29,37 +29,61 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -201.5
-offset_top = -191.0
-offset_right = 201.5
-offset_bottom = 191.0
+offset_left = -588.0
+offset_top = -329.0
+offset_right = -185.0
+offset_bottom = 53.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_iq8yq")
 
-[node name="GridController" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 69.0
-offset_top = 298.0
-offset_right = 109.0
-offset_bottom = 338.0
-script = ExtResource("3_pirtj")
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="7" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(206, 195)
-scale = Vector2(0.505208, 0.689286)
-texture = ExtResource("1_adf8a")
+[node name="MenuBar" type="MenuBar" parent="CanvasLayer"]
+offset_left = 83.0
+offset_top = 297.0
+offset_right = 299.0
+offset_bottom = 331.0
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="1" type="Sprite2D" parent="CanvasLayer/MenuBar"]
+position = Vector2(113, 17)
+scale = Vector2(0.455874, 0.638117)
+texture = ExtResource("4_xgfwt")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/MenuBar"]
 layout_mode = 0
-offset_left = 70.0
-offset_top = 53.0
-offset_right = 276.0
-offset_bottom = 268.0
+offset_right = 217.0
+offset_bottom = 40.0
+columns = 6
 
-[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+[node name="ItemSlot2" parent="CanvasLayer/MenuBar/GridContainer" instance=ExtResource("5_qoba8")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot3" parent="CanvasLayer/MenuBar/GridContainer" instance=ExtResource("6_n61uw")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot4" parent="CanvasLayer/MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot" parent="CanvasLayer/MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="ItemSlot5" parent="CanvasLayer/MenuBar/GridContainer" instance=ExtResource("8_yyoir")]
+layout_mode = 2
+script = ExtResource("17_t7qug")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 58.0
+offset_top = 48.0
+offset_right = 264.0
+offset_bottom = 263.0
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/NinePatchRect"]
 layout_mode = 0
 offset_left = 29.0
 offset_top = -8.0
@@ -67,225 +91,202 @@ offset_right = 249.0
 offset_bottom = 209.0
 columns = 5
 
-[node name="ItemSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot"]
+[node name="item-display" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot"]
 z_index = 2
 position = Vector2(62, 18)
 texture = ExtResource("4_qp1o7")
 
-[node name="ItemSlot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot4" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display2" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot4"]
+[node name="item-display2" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot4"]
 z_index = 2
 position = Vector2(22.7957, 105.887)
 texture = ExtResource("5_wuxde")
 
-[node name="ItemSlot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot5" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display3" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot5"]
+[node name="item-display3" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot5"]
 z_index = 2
 position = Vector2(21, 60)
 texture = ExtResource("6_atqoo")
 
-[node name="ItemSlot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot6" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display6" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot6"]
+[node name="item-display6" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot6"]
 z_index = 2
 position = Vector2(-111, 106)
 texture = ExtResource("7_fb783")
 
-[node name="ItemSlot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot7" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display7" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot7"]
+[node name="item-display7" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot7"]
 z_index = 2
 position = Vector2(-24, 60)
 texture = ExtResource("8_jwaoo")
 
-[node name="ItemSlot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot8" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display8" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot8"]
+[node name="item-display8" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot8"]
 z_index = 2
 position = Vector2(23, 18)
 texture = ExtResource("9_woxvw")
 
-[node name="ItemSlot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot9" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display9" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot9"]
+[node name="item-display9" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot9"]
 z_index = 2
 position = Vector2(153, -29)
 texture = ExtResource("5_wuxde")
 
-[node name="ItemSlot10" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot10" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display10" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot10"]
+[node name="item-display10" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot10"]
 z_index = 2
 position = Vector2(67, -26)
 texture = ExtResource("4_qp1o7")
 
-[node name="ItemSlot11" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot11" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display11" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot11"]
+[node name="item-display11" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot11"]
 z_index = 2
 position = Vector2(-22, -27)
 texture = ExtResource("10_861hu")
 
-[node name="ItemSlot12" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot12" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display12" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot12"]
+[node name="item-display12" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot12"]
 z_index = 2
 position = Vector2(-155, -26)
 texture = ExtResource("11_xqam5")
 
-[node name="ItemSlot13" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot13" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="item-display4" type="Sprite2D" parent="NinePatchRect/GridContainer/ItemSlot13"]
+[node name="item-display4" type="Sprite2D" parent="CanvasLayer/NinePatchRect/GridContainer/ItemSlot13"]
 z_index = 2
 position = Vector2(66, -26)
 texture = ExtResource("12_kb3ee")
 
-[node name="ItemSlot14" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot14" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot15" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot15" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot16" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot16" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot17" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot17" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot18" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot18" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot19" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot19" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot20" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot20" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot21" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot21" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot22" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot22" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot23" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot23" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot24" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot24" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot25" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot25" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot2" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="ItemSlot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
+[node name="ItemSlot3" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("3_bp16m")]
 z_index = 1
 layout_mode = 2
 script = ExtResource("4_cdt5r")
 
-[node name="1" type="Sprite2D" parent="NinePatchRect"]
+[node name="1" type="Sprite2D" parent="CanvasLayer/NinePatchRect"]
 position = Vector2(134, 96)
 scale = Vector2(1.53571, 1.52232)
 texture = ExtResource("21_72jvy")
 
-[node name="MenuBar" type="MenuBar" parent="."]
-layout_mode = 0
-offset_left = 95.0
-offset_top = 302.0
-offset_right = 311.0
-offset_bottom = 336.0
+[node name="7" type="Sprite2D" parent="CanvasLayer"]
+z_index = -1
+position = Vector2(194, 190)
+scale = Vector2(0.505208, 0.689286)
+texture = ExtResource("1_adf8a")
 
-[node name="1" type="Sprite2D" parent="MenuBar"]
-position = Vector2(113, 17)
-scale = Vector2(0.455874, 0.638117)
-texture = ExtResource("4_xgfwt")
-
-[node name="GridContainer" type="GridContainer" parent="MenuBar"]
-layout_mode = 0
-offset_right = 217.0
-offset_bottom = 40.0
-columns = 6
-
-[node name="ItemSlot2" parent="MenuBar/GridContainer" instance=ExtResource("5_qoba8")]
-layout_mode = 2
-script = ExtResource("17_t7qug")
-
-[node name="ItemSlot3" parent="MenuBar/GridContainer" instance=ExtResource("6_n61uw")]
-layout_mode = 2
-script = ExtResource("17_t7qug")
-
-[node name="ItemSlot4" parent="MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
-layout_mode = 2
-script = ExtResource("17_t7qug")
-
-[node name="ItemSlot" parent="MenuBar/GridContainer" instance=ExtResource("5_2heoq")]
-layout_mode = 2
-script = ExtResource("17_t7qug")
-
-[node name="ItemSlot5" parent="MenuBar/GridContainer" instance=ExtResource("8_yyoir")]
-layout_mode = 2
-script = ExtResource("17_t7qug")
+[node name="GridController" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 57.0
+offset_top = 293.0
+offset_right = 97.0
+offset_bottom = 333.0
+script = ExtResource("3_pirtj")

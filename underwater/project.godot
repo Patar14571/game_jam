@@ -55,3 +55,8 @@ i={
 [layer_names]
 
 2d_physics/layer_2="Water"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
